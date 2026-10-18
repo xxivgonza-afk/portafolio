@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sazón de Barrio — Comida Criolla Dominicana</title>
+  <meta name="description" content="Sazón de Barrio: comida criolla dominicana en ambiente familiar. Almuerzo económico con el mejor sabor del barrio. Haz tu pedido por WhatsApp.">
+  <meta property="og:title" content="Sazón de Barrio — Comida Criolla Dominicana">
+  <meta property="og:description" content="El sabor de lo nuestro. Almuerzo familiar, económico y delicioso.">
+  <meta property="og:image" content="assets/images/comida-1.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__container">
+      <a href="#" class="nav__logo">Sazón de Barrio</a>
+      <button class="nav__toggle" aria-label="Menú" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#menu" class="nav__link">Menú del Día</a></li>
+        <li><a href="#historia" class="nav__link">Historia</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
+        <li><a href="https://wa.me/18091234567?text=¡Hola!%20Quiero%20hacer%20un%20pedido" class="nav__cta" target="_blank">Pedir por WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero__left">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <span class="hero__badge">✦ Desde 1998</span>
+        <h1 class="hero__title">
+          <span class="hero__title-line">Sazón de</span>
+          <span class="hero__title-line hero__title-line--accent">Barrio</span>
+        </h1>
+        <p class="hero__subtitle">El sabor de lo nuestro</p>
+        <p class="hero__desc">Comida criolla dominicana hecha con amor, como en casa. Almuerzo económico para toda la familia.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/18091234567?text=¡Hola!%20Quiero%20hacer%20un%20pedido" class="btn btn--primary" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedir por WhatsApp
+          </a>
+          <a href="#ubicacion" class="btn btn--outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Reservar Mesa
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">+25</span>
+            <span class="hero__stat-label">Años de sazón</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">+80</span>
+            <span class="hero__stat-label">Platos caseros</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">★ 4.8</span>
+            <span class="hero__stat-label">Valoración</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__right">
+      <img src="assets/images/comida-1.jpg" alt="Bandera Dominicana: arroz, habichuelas, carne y tostones" class="hero__image" loading="eager">
+      <div class="hero__image-overlay"></div>
+      <div class="hero__badge-plato">
+        <span class="hero__badge-plato-icon">🍛</span>
+        <div>
+          <strong>La Bandera</strong>
+          <span>Plato del día</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Menú del Día</span>
+        <h2 class="section__title">Lo que hay hoy</h2>
+        <p class="section__desc">Toca cualquier plato para ver sus ingredientes, concepto y más detalles.</p>
+      </div>
+      <div class="menu__days">
+        <button class="menu__day-btn active" data-day="0">Lunes</button>
+        <button class="menu__day-btn" data-day="1">Martes</button>
+        <button class="menu__day-btn" data-day="2">Miércoles</button>
+        <button class="menu__day-btn" data-day="3">Jueves</button>
+        <button class="menu__day-btn" data-day="4">Viernes</button>
+        <button class="menu__day-btn" data-day="5">Sábado</button>
+      </div>
+      <div class="menu__grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <section class="historia" id="historia">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Nuestra Historia</span>
+        <h2 class="section__title">Más de 25 años sazonando el barrio</h2>
+      </div>
+      <div class="historia__content">
+        <div class="historia__img">
+          <img src="assets/images/interior.jpg" alt="Interior de Sazón de Barrio" loading="lazy">
+          <div class="historia__img-badge">✦ 1998</div>
+        </div>
+        <div class="historia__text">
+          <p>Doña María abrió las puertas de su cocina en 1998 con una olla de habichuelas y mucho amor. Lo que empezó como un pequeño comedor para los vecinos, hoy es un punto de encuentro para familias y trabajadores que buscan el verdadero sabor dominicano.</p>
+          <p>Cada plato lleva la receta de la abuela, los ingredientes frescos del mercado y ese toque especial que solo se consigue cuando cocinas con el corazón. Aquí no hay atajos: arroz graneadito, habichuelas cremosas, carne jugosa y siempre un poquito de amor.</p>
+          <p class="historia__firma">— Doña María & Familia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Galería</span>
+        <h2 class="section__title">Así se ve el sabor</h2>
+        <p class="section__desc">Cada plato es una obra de arte hecha con ingredientes frescos y mucho cariño.</p>
+      </div>
+      <div class="galeria__grid">
+        <div class="galeria__item galeria__item--wide">
+          <img src="assets/images/comida-1.jpg" alt="Bandera Dominicana" loading="lazy">
+        </div>
+        <div class="galeria__item">
+          <img src="assets/images/comida-2.jpg" alt="Empanadas dominicanas" loading="lazy">
+        </div>
+        <div class="galeria__item">
+          <img src="assets/images/comida-3.jpg" alt="Habichuelas con dulce" loading="lazy">
+        </div>
+        <div class="galeria__item">
+          <img src="assets/images/comida-4.jpg" alt="Pescado frito con arroz" loading="lazy">
+        </div>
+        <div class="galeria__item">
+          <img src="assets/images/1.jpg" alt="Plato criollo" loading="lazy">
+        </div>
+        <div class="galeria__item">
+          <img src="assets/images/3.jpg" alt="Cocina dominicana" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ubicacion" id="ubicacion">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Visítanos</span>
+        <h2 class="section__title">Dónde encontrarnos</h2>
+      </div>
+      <div class="ubicacion__content">
+        <div class="ubicacion__info">
+          <div class="ubicacion__card">
+            <h3>📍 Dirección</h3>
+            <p>Calle Principal #42, Esquina Mella<br>Santiago de los Caballeros, República Dominicana</p>
+          </div>
+          <div class="ubicacion__card">
+            <h3>🕐 Horarios</h3>
+            <div class="ubicacion__horarios">
+              <span>Lun — Sáb</span><span>8:00 AM — 6:00 PM</span>
+              <span>Domingo</span><span>Cerrado</span>
+            </div>
+          </div>
+          <div class="ubicacion__card">
+            <h3>📞 Contacto</h3>
+            <p><a href="https://wa.me/18091234567" target="_blank">+1 (809) 123-4567</a></p>
+            <p><a href="mailto:hola@sazondebarrio.com">hola@sazondebarrio.com</a></p>
+          </div>
+          <a href="https://wa.me/18091234567?text=¡Hola!%20Quiero%20reservar%20una%20mesa" class="btn btn--primary" target="_blank">Reservar por WhatsApp</a>
+        </div>
+        <div class="ubicacion__mapa">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-70.7333%2C19.45%2C-70.6933%2C19.48&amp;layer=mapnik&amp;marker=19.465%2C-70.7133" loading="lazy" title="Mapa de ubicación"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <h3>Sazón de Barrio</h3>
+        <p>El sabor de lo nuestro desde 1998.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/18091234567" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+          <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+          <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__horarios">
+        <h4>Horarios</h4>
+        <p>Lun — Sáb: 8:00 AM — 6:00 PM</p>
+        <p>Domingo: Cerrado</p>
+      </div>
+      <div class="footer__contacto">
+        <h4>Contacto</h4>
+        <p>Calle Principal #42, Santiago, RD</p>
+        <p>+1 (809) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Sazón de Barrio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/18091234567?text=¡Hola!%20Quiero%20hacer%20un%20pedido" class="whatsapp-float" target="_blank" aria-label="Pedir por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <div class="modal" id="dishModal">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content" id="modalContent">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <div class="modal__layout">
+        <div class="modal__image-wrap">
+          <img class="modal__image" id="modalImage" alt="">
+        </div>
+        <div class="modal__info">
+          <span class="modal__tag" id="modalTag">Plato del día</span>
+          <h2 class="modal__name" id="modalName"></h2>
+          <span class="modal__price" id="modalPrice"></span>
+          <p class="modal__desc" id="modalDesc"></p>
+          <div class="modal__section">
+            <h3>🧑‍🍳 Concepto</h3>
+            <p id="modalConcepto"></p>
+          </div>
+          <div class="modal__section">
+            <h3>🥗 Ingredientes</h3>
+            <div class="modal__ingredientes" id="modalIngredientes"></div>
+          </div>
+          <a class="btn btn--primary modal__btn" id="modalWhatsApp" target="_blank">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">&times;</button>
+    <img class="lightbox__img" id="lightboxImg" alt="">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
