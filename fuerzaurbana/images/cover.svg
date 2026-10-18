@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Portada de Fuerza Urbana">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0c"/>
+      <stop offset="1" stop-color="#16161b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d2e"/>
+      <stop offset="1" stop-color="#ffb020"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.12" r="0.95">
+      <stop offset="0" stop-color="#ff4d2e" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff4d2e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="stripes" width="60" height="60" patternTransform="rotate(115)" patternUnits="userSpaceOnUse">
+      <rect width="2" height="60" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#glow)"/>
+  <rect width="1200" height="800" fill="url(#stripes)"/>
+  <text x="80" y="350" font-family="Inter, Arial, sans-serif" font-size="132" font-weight="900" fill="#f6f6f7" letter-spacing="-5">FUERZA</text>
+  <text x="80" y="480" font-family="Inter, Arial, sans-serif" font-size="132" font-weight="900" fill="url(#accent)" letter-spacing="-5">URBANA</text>
+  <text x="86" y="560" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#a1a1aa" letter-spacing="7">GIMNASIO · ENTRENAMIENTO</text>
+</svg>
