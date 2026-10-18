@@ -938,6 +938,40 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 
+/* ===== Para negocios ===== */
+.negocios {
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, transparent, rgba(167, 139, 250, 0.03) 50%, transparent);
+}
+
+.negocios__num {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.negocios__cta {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.negocios__cta-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 520px;
+}
+
+.negocios__cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* ===== Skills ===== */
 .skills {
   border-top: 1px solid var(--border);
