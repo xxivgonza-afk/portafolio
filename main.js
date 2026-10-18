@@ -334,7 +334,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalTags = document.getElementById('modalTags');
   const modalFeatures = document.getElementById('modalFeatures');
   const modalLive = document.getElementById('modalLive');
-  const modalGitHub = document.getElementById('modalGitHub');
 
   function openModal(index) {
     const data = projectData[index];
@@ -344,7 +343,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTags.innerHTML = data.tags.map(t => `<span>${t}</span>`).join('');
     modalFeatures.innerHTML = data.features.map(f => `<li>${f}</li>`).join('');
     modalLive.href = data.live;
-    modalGitHub.href = data.github;
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -366,51 +364,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== Testimonials Slider =====
   const track = document.getElementById('testimoniosTrack');
-  const prevBtn = document.getElementById('testPrev');
-  const nextBtn = document.getElementById('testNext');
-  const dotsContainer = document.getElementById('testDots');
-  const testimonioCards = track.querySelectorAll('.testimonio-card');
-  let currentTest = 0;
-  const totalTest = testimonioCards.length;
+  if (track) {
+    const prevBtn = document.getElementById('testPrev');
+    const nextBtn = document.getElementById('testNext');
+    const dotsContainer = document.getElementById('testDots');
+    const testimonioCards = track.querySelectorAll('.testimonio-card');
+    let currentTest = 0;
+    const totalTest = testimonioCards.length;
 
-  for (let i = 0; i < totalTest; i++) {
-    const dot = document.createElement('span');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToTest(i));
-    dotsContainer.appendChild(dot);
-  }
+    for (let i = 0; i < totalTest; i++) {
+      const dot = document.createElement('span');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToTest(i));
+      dotsContainer.appendChild(dot);
+    }
 
-  function goToTest(index) {
-    currentTest = index;
-    track.style.transform = `translateX(-${currentTest * 100}%)`;
-    dotsContainer.querySelectorAll('span').forEach((d, i) => {
-      d.classList.toggle('active', i === currentTest);
+    function goToTest(index) {
+      currentTest = index;
+      track.style.transform = `translateX(-${currentTest * 100}%)`;
+      dotsContainer.querySelectorAll('span').forEach((d, i) => {
+        d.classList.toggle('active', i === currentTest);
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentTest = (currentTest - 1 + totalTest) % totalTest;
+      goToTest(currentTest);
     });
-  }
 
-  prevBtn.addEventListener('click', () => {
-    currentTest = (currentTest - 1 + totalTest) % totalTest;
-    goToTest(currentTest);
-  });
+    nextBtn.addEventListener('click', () => {
+      currentTest = (currentTest + 1) % totalTest;
+      goToTest(currentTest);
+    });
 
-  nextBtn.addEventListener('click', () => {
-    currentTest = (currentTest + 1) % totalTest;
-    goToTest(currentTest);
-  });
-
-  // Auto-play
-  let testInterval = setInterval(() => {
-    currentTest = (currentTest + 1) % totalTest;
-    goToTest(currentTest);
-  }, 5000);
-
-  track.addEventListener('mouseenter', () => clearInterval(testInterval));
-  track.addEventListener('mouseleave', () => {
-    testInterval = setInterval(() => {
+    // Auto-play
+    let testInterval = setInterval(() => {
       currentTest = (currentTest + 1) % totalTest;
       goToTest(currentTest);
     }, 5000);
-  });
+
+    track.addEventListener('mouseenter', () => clearInterval(testInterval));
+    track.addEventListener('mouseleave', () => {
+      testInterval = setInterval(() => {
+        currentTest = (currentTest + 1) % totalTest;
+        goToTest(currentTest);
+      }, 5000);
+    });
+  }
 
   // ===== Copy to Clipboard =====
   const copyBtns = document.querySelectorAll('.copy-btn');
